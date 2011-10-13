@@ -4,7 +4,7 @@ The *dart-compiler* gem is a svelte wrapper around the "Dart Compiler":http://ww
 
 The Dart Compiler's *2011-10-12* JAR-files are included with the gem.
 
-This wrapper is largelly based in "Closure Compiler":https://github.com/documentcloud/closure-compiler by Jeremy Ashkenas
+This wrapper is largelly based in "Closure Compiler":https://github.com/documentcloud/closure-compiler by DocumentCloud
 
 h2. Installation
 
