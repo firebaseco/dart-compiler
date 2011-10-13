@@ -1,24 +1,14 @@
-require "rake/testtask"
-
-Rake::TestTask.new do |t|
-  t.libs += ["lib", "test"]
-  t.test_files = FileList["test/**/*_test.rb"]
-  t.verbose = true
-end
-
 namespace :gem do
 
-  desc 'Build and install the closure-compiler gem'
+  desc 'Build and install the dart-compiler gem'
   task :install do
-    sh "gem build closure-compiler.gemspec"
+    sh "gem build dart-compiler.gemspec"
     sh "sudo gem install #{Dir['*.gem'].join(' ')} --local --no-ri --no-rdoc"
   end
 
-  desc 'Uninstall the closure-compiler gem'
+  desc 'Uninstall the dart-compiler gem'
   task :uninstall do
-    sh "sudo gem uninstall -x closure-compiler"
+    sh "sudo gem uninstall -x dart-compiler"
   end
 
 end
-
-task :default => :test
